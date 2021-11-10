@@ -1,0 +1,83 @@
+html, body, main {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #efefefda;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    box-sizing: border-box;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.911);
+    width: 400px;
+    padding: 20px;
+}
+
+.display {
+    text-align: right;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    padding: 15px 15px;
+    margin-bottom: 20px;
+}
+
+#top-display {
+    font-size: 16px;
+    min-height: 20px;
+    margin-bottom: 15px;
+    color: #3b3737da;
+}
+
+#bottom-display {
+    font-size: 24px;
+    min-height: 30px;
+}
+
+.buttons {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns:repeat(4, 1fr);
+}
+
+.btn {
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 24px;
+    background-color: #efefefe8;
+    outline: none;
+}
+
+.numbers {
+    background-color: #efefefbb;
+}
+
+.btn:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0 0);
+}
+
+.btn:active {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0 0);
+}
+
+.first-row {
+    grid-column: span 2;
+}
+
+#equals {
+    background-color: lightgreen;
+}
+
+#delete {
+    background-color: rgb(202, 66, 66);
+}
